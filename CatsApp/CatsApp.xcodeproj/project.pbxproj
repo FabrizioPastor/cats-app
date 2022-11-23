@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		494A8106292E710F007CA1C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A8105292E710F007CA1C7 /* AppDelegate.swift */; };
 		494A8108292E710F007CA1C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A8107292E710F007CA1C7 /* SceneDelegate.swift */; };
-		494A810A292E710F007CA1C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A8109292E710F007CA1C7 /* ViewController.swift */; };
-		494A810D292E710F007CA1C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494A810B292E710F007CA1C7 /* Main.storyboard */; };
 		494A810F292E7111007CA1C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 494A810E292E7111007CA1C7 /* Assets.xcassets */; };
 		494A8112292E7111007CA1C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 494A8110292E7111007CA1C7 /* LaunchScreen.storyboard */; };
+		494A811F292E71E4007CA1C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494A811D292E71E4007CA1C7 /* HomeView.swift */; };
+		494A8120292E71E4007CA1C7 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 494A811E292E71E4007CA1C7 /* HomeView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		494A8102292E710F007CA1C7 /* CatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		494A8105292E710F007CA1C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		494A8107292E710F007CA1C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		494A8109292E710F007CA1C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		494A810C292E710F007CA1C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		494A810E292E7111007CA1C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		494A8111292E7111007CA1C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		494A8113292E7111007CA1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494A811D292E71E4007CA1C7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		494A811E292E71E4007CA1C7 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +58,45 @@
 			children = (
 				494A8105292E710F007CA1C7 /* AppDelegate.swift */,
 				494A8107292E710F007CA1C7 /* SceneDelegate.swift */,
-				494A8109292E710F007CA1C7 /* ViewController.swift */,
-				494A810B292E710F007CA1C7 /* Main.storyboard */,
+				494A8119292E71AE007CA1C7 /* Home */,
 				494A810E292E7111007CA1C7 /* Assets.xcassets */,
 				494A8110292E7111007CA1C7 /* LaunchScreen.storyboard */,
 				494A8113292E7111007CA1C7 /* Info.plist */,
 			);
 			path = CatsApp;
+			sourceTree = "<group>";
+		};
+		494A8119292E71AE007CA1C7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				494A811C292E71BE007CA1C7 /* ViewModel */,
+				494A811B292E71B9007CA1C7 /* View */,
+				494A811A292E71B4007CA1C7 /* Model */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		494A811A292E71B4007CA1C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		494A811B292E71B9007CA1C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				494A811D292E71E4007CA1C7 /* HomeView.swift */,
+				494A811E292E71E4007CA1C7 /* HomeView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		494A811C292E71BE007CA1C7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +159,7 @@
 			files = (
 				494A8112292E7111007CA1C7 /* LaunchScreen.storyboard in Resources */,
 				494A810F292E7111007CA1C7 /* Assets.xcassets in Resources */,
-				494A810D292E710F007CA1C7 /* Main.storyboard in Resources */,
+				494A8120292E71E4007CA1C7 /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				494A810A292E710F007CA1C7 /* ViewController.swift in Sources */,
+				494A811F292E71E4007CA1C7 /* HomeView.swift in Sources */,
 				494A8106292E710F007CA1C7 /* AppDelegate.swift in Sources */,
 				494A8108292E710F007CA1C7 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		494A810B292E710F007CA1C7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				494A810C292E710F007CA1C7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		494A8110292E7111007CA1C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +316,6 @@
 				INFOPLIST_FILE = CatsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +343,6 @@
 				INFOPLIST_FILE = CatsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
